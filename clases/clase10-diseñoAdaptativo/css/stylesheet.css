@@ -62,7 +62,6 @@ h2{
 }
 .description{
     width:80%;
-    margin:auto;
     padding: 15px;
 }
 button{
@@ -75,10 +74,83 @@ button{
 }
 /*MAIN*/
 /*FOOTER*/
-footer p{
+footer{
     background-color: #00669F;
+    display: flex;
+    flex-direction: column;
+}
+footer p{
     margin-top: 15px;
     padding: 15px;
     color: white;
+    width: 100%;
 }
 /*FOOTER*/
+
+/*PHONE*/
+@media(max-width: 767px){
+.heroes-section{
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    margin-bottom: 60px;
+}
+footer p{
+  display: flex;
+  justify-content: center;
+}
+footer img{
+    width: 60px;
+    align-self: center;
+}
+.plus{
+    color: #00669f;
+    position: absolute;
+    right: 5%;
+    top: 750px;
+    font-size: 40px;
+}
+.description{
+    width: 100%;
+}
+}
+
+/*TABLET*/
+@media(min-width: 770px){
+.card{
+    margin-bottom: 60px;
+    max-width: 350px;
+    padding-bottom: 40px;
+}
+.heroes-section{
+    flex-wrap: wrap;
+}
+.logo{
+    left: 125px;
+    bottom: 110px;
+}
+.plus{
+    color: #00669f;
+    position: absolute;
+    right: 1%;
+    top: 735px;
+    font-size: 40px;
+}
+.description{
+    width: 100%;
+    margin-bottom: 10px;
+}
+footer{
+  width: 100%;
+    background-color: #00669F;
+    flex-direction: row;
+    align-items:  center;
+}
+footer img{
+    box-sizing: border-box;
+    width: 90px;
+    height: 25px;
+}
+}
