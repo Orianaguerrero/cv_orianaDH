@@ -22,7 +22,6 @@ body{
     height: 100%;
 }
 a{
-    text-decoration: none;
     color: black
 }
 .encabezado{
@@ -47,7 +46,12 @@ a{
 }
 .lista-act{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: center; 
+
+}
+.proyects{
+    font-weight: 700 ;
 }
 .lista-act li{
     margin-right: 10px;
